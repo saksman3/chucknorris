@@ -93,27 +93,27 @@ html {
     left: 50%;
     position: absolute;
     width: 80% !important;
-    transform: translate(-50%, -50%); } }
-[class*="col-"] {
-  float: right !important;
-  width: 100% !important; }
+    transform: translate(-50%, -50%); }
 
-.box {
-  width: 100% !important;
-  height: 100px !important; }
-  .box .joke-image {
-    display: inline; }
-  .box .joke {
-    width: 100px !important; }
-  .box:hover {
-    box-shadow: 3px 3px 3px 3px #ddd !important;
-    transform: scaleY(1.1) !important;
-    height: 300px !important; }
-    .box:hover .joke {
-      overflow: visible !important;
-      white-space: normal !important;
-      width: 100% !important; }
+  [class*="col-"] {
+    float: right !important;
+    width: 100% !important; }
 
+  .box {
+    width: 100% !important;
+    height: 100px !important; }
+    .box .joke-image {
+      display: inline; }
+    .box .joke {
+      width: 100px !important; }
+    .box:hover {
+      box-shadow: 3px 3px 3px 3px #ddd !important;
+      transform: scaleY(1.1) !important;
+      height: 300px !important; }
+      .box:hover .joke {
+        overflow: visible !important;
+        white-space: normal !important;
+        width: 100% !important; } }
 body {
   background: #faf2f2; }
 
@@ -209,7 +209,7 @@ body {
     text-align: center;
     border-bottom: 1px solid red;
     margin-bottom: 10px;
-    background: #cad3c8;
+    background: #5f27cd;
     border-radius: 2px;
     padding: 10px; }
     .joke-card .joke_header .image {
