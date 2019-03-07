@@ -1,0 +1,70 @@
+@include mediaXl {
+  #main .categories {
+    width: 600px;
+    font-size: 1.4rem;
+    border-radius: 2px;
+  }
+}
+@include mediaLg {
+}
+@include mediaMd {
+}
+
+@include mediaSm {
+  .loader {
+    top: 50% !important;
+    left: 40% !important;
+  }
+  .Search-container .searchForm {
+    margin-bottom: 10px;
+    input[type="text"] {
+      width: 200px !important;
+      background: gray !important;
+      color: white !important;
+      font-weight: 500 !important;
+      &::placeholder {
+        color: white;
+        opacity: 0.4;
+      }
+    }
+  }
+  #main .categories {
+    width: 80%;
+    .category {
+      font-size: 1rem !important;
+      padding: 1rem !important;
+    }
+  }
+  .joke-card {
+    top: 50%;
+    margin: 0 auto !important;
+    left: 50%;
+    position: absolute;
+    width: 80% !important;
+    transform: translate(-50%, -50%);
+  }
+  [class*="col-"] {
+    float: right !important;
+    width: 100% !important;
+  }
+  .box {
+    width: 100% !important;
+    height: 100px !important;
+    .joke-image {
+      display: inline;
+    }
+    .joke {
+      width: 100px !important;
+    }
+    &:hover {
+      box-shadow: 3px 3px 3px 3px #ddd !important;
+      transform: scaleY(1.1) !important;
+      height: 300px !important;
+      .joke {
+        overflow: visible !important;
+        white-space: normal !important;
+        width: 100% !important;
+      }
+    }
+  }
+}

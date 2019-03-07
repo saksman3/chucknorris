@@ -1,0 +1,85 @@
+$primary-color: #273c75;
+$lynx-white: #f5f6fa;
+@import url("https://fonts.googleapis.com/css?family=The+Girl+Next+Door");
+@import url("https://fonts.googleapis.com/css?family=Satisfy");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.col-1 {
+  width: 8.33%;
+}
+.col-2 {
+  width: 16.66%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33%;
+}
+.col-5 {
+  width: 41.66%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33%;
+}
+.col-8 {
+  width: 66.66%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33%;
+}
+.col-11 {
+  width: 91.66%;
+}
+.col-12 {
+  width: 100%;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 10px;
+}
+@media screen and (max-width: 768px) {
+  [class*="col-"] {
+    float: right !important;
+    width: 100% !important;
+  }
+}
+@mixin mediaSm {
+  @media screen and (max-width: 600px) {
+    @content; //will be recieved as args when called.
+  }
+}
+@mixin mediaMd {
+  @media screen and (max-width: 768px) {
+    @content; //will be recieved as args when called.
+  }
+}
+@mixin mediaLg {
+  @media screen and (min-width: 769px) and (max-width: 1170px) {
+    @content; //will be recieved as args when called.
+  }
+}
+@mixin mediaXl {
+  @media screen and (min-width: 1171px) {
+    @content; //will be recieved as args when called.
+  }
+}

@@ -1,0 +1,324 @@
+@import url("https://fonts.googleapis.com/css?family=The+Girl+Next+Door");
+@import url("https://fonts.googleapis.com/css?family=Satisfy");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
+html {
+  scroll-behavior: smooth; }
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table; }
+
+.col-1 {
+  width: 8.33%; }
+
+.col-2 {
+  width: 16.66%; }
+
+.col-3 {
+  width: 25%; }
+
+.col-4 {
+  width: 33.33%; }
+
+.col-5 {
+  width: 41.66%; }
+
+.col-6 {
+  width: 50%; }
+
+.col-7 {
+  width: 58.33%; }
+
+.col-8 {
+  width: 66.66%; }
+
+.col-9 {
+  width: 75%; }
+
+.col-10 {
+  width: 83.33%; }
+
+.col-11 {
+  width: 91.66%; }
+
+.col-12 {
+  width: 100%; }
+
+[class*="col-"] {
+  float: left;
+  padding: 10px; }
+
+@media screen and (max-width: 768px) {
+  [class*="col-"] {
+    float: right !important;
+    width: 100% !important; } }
+@media screen and (min-width: 1171px) {
+  #main .categories {
+    width: 600px;
+    font-size: 1.4rem;
+    border-radius: 2px; } }
+@media screen and (max-width: 600px) {
+  .loader {
+    top: 50% !important;
+    left: 40% !important; }
+
+  .Search-container .searchForm {
+    margin-bottom: 10px; }
+    .Search-container .searchForm input[type="text"] {
+      width: 200px !important;
+      background: gray !important;
+      color: white !important;
+      font-weight: 500 !important; }
+      .Search-container .searchForm input[type="text"]::placeholder {
+        color: white;
+        opacity: 0.4; }
+
+  #main .categories {
+    width: 80%; }
+    #main .categories .category {
+      font-size: 1rem !important;
+      padding: 1rem !important; }
+
+  .joke-card {
+    top: 50%;
+    margin: 0 auto !important;
+    left: 50%;
+    position: absolute;
+    width: 80% !important;
+    transform: translate(-50%, -50%); }
+
+  [class*="col-"] {
+    float: right !important;
+    width: 100% !important; }
+
+  .box {
+    width: 100% !important;
+    height: 100px !important; }
+    .box .joke-image {
+      display: inline; }
+    .box .joke {
+      width: 100px !important; }
+    .box:hover {
+      box-shadow: 3px 3px 3px 3px #ddd !important;
+      transform: scaleY(1.1) !important;
+      height: 300px !important; }
+      .box:hover .joke {
+        overflow: visible !important;
+        white-space: normal !important;
+        width: 100% !important; } }
+body {
+  background: #faf2f2; }
+
+.loader {
+  width: 40px;
+  height: 40px;
+  border: 10px solid rgba(60, 60, 180, 0.45);
+  border-top: 10px solid #3c3cb4;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: 0.6s load infinite linear; }
+@keyframes load {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+.page-header {
+  background: #273c75;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 10px;
+  box-shadow: 2px 3px 4px #777676; }
+  .page-header .logo {
+    display: inline-block;
+    margin: 5px;
+    color: #f5f6fa;
+    font-size: 20px;
+    font-family: "Satisfy", cursive;
+    transition: 0.3s all ease-in-out; }
+    .page-header .logo a {
+      color: white;
+      text-decoration: none; }
+      .page-header .logo a:hover {
+        color: red !important; }
+  .page-header .navigation {
+    display: inline-block;
+    float: right;
+    margin-right: 25px; }
+    .page-header .navigation ul {
+      list-style-type: none; }
+    .page-header .navigation ul > li {
+      display: inline-block;
+      margin-top: 5px; }
+      .page-header .navigation ul > li a {
+        text-decoration: none;
+        color: #f5f6fa;
+        padding: 10px;
+        transition: 0.4s all ease-in-out; }
+        .page-header .navigation ul > li a:hover {
+          background: #f5f6fa;
+          color: #273c75;
+          border-bottom: 2px solid red; }
+
+#main {
+  margin-top: 100px;
+  text-align: center; }
+  #main .categories {
+    margin: 0 auto; }
+    #main .categories .category {
+      padding: 3rem 0.8rem;
+      background: white;
+      display: flex;
+      flex-direction: column;
+      border-bottom: 2px solid #dde1ee;
+      border-top: none;
+      margin: 5px;
+      transition: 0.3s all ease;
+      border-radius: 5px;
+      font-size: 1.5rem;
+      color: #273c75;
+      text-decoration: none;
+      text-transform: capitalize;
+      box-shadow: 4px 2px 10px darkgray;
+      text-align: center; }
+      #main .categories .category:hover {
+        background: #1e2e5a;
+        color: white; }
+
+.joke-card {
+  margin: 100px auto;
+  background-color: white;
+  width: 50%;
+  box-shadow: 2px 2px grey;
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  height: 300px; }
+  .joke-card .joke_header {
+    text-align: center;
+    border-bottom: 1px solid red;
+    margin-bottom: 10px;
+    background: #5f27cd;
+    border-radius: 2px;
+    padding: 10px; }
+    .joke-card .joke_header .image {
+      display: block;
+      padding: 30px;
+      transition: 0.3s all ease-in-out; }
+      .joke-card .joke_header .image:hover {
+        transform: scale(2); }
+    .joke-card .joke_header .favourite-box {
+      display: inline-block;
+      float: right;
+      font-size: 20px; }
+      .joke-card .joke_header .favourite-box .fav:hover {
+        color: red;
+        cursor: pointer; }
+  .joke-card .joke-text {
+    display: block;
+    top: 10%;
+    position: relative;
+    font-family: "sans-serif", cursive;
+    color: #273c75;
+    background: #ddd;
+    padding: 4px;
+    height: 150px;
+    overflow-y: auto; }
+
+.Search-container {
+  width: 80%;
+  margin: 0 auto; }
+  .Search-container .message {
+    color: red;
+    text-align: center;
+    font-size: 25px; }
+  .Search-container .searchForm {
+    margin-top: 100px;
+    text-align: center;
+    border-bottom: 1px solid #aaaaaa; }
+    .Search-container .searchForm input[type="text"] {
+      border-width: 0px;
+      padding: 10px;
+      width: 30%;
+      font-size: 15px;
+      font-weight: 300;
+      color: #273c75;
+      transition: 0.4s ease-in-out all;
+      margin-bottom: 5px;
+      background: white; }
+      .Search-container .searchForm input[type="text"]:focus {
+        border: 1px solid red; }
+    .Search-container .searchForm button {
+      border-width: 0px;
+      padding: 10px;
+      font-size: 15px;
+      background: #273c75;
+      color: #f5f6fa;
+      cursor: pointer;
+      transition: 0.3s all ease-in-out; }
+      .Search-container .searchForm button:hover {
+        background: #f5f6fa;
+        color: #273c75;
+        border-left: 2px solid red; }
+  .Search-container .search-result {
+    border: 1px solid grey; }
+    .Search-container .search-result .result-total {
+      text-align: center;
+      font-size: 20px;
+      color: #273c75; }
+    .Search-container .search-result .row .box {
+      padding: 10px;
+      background: #273c75;
+      margin-bottom: 10px;
+      height: 100px;
+      border-radius: 4px;
+      transition: 0.4s all ease-in-out;
+      color: white;
+      animation: anim 1s linear; }
+@keyframes anim {
+  0% {
+    transform: translateX(-100%); }
+  100% {
+    transform: translateX(0); } }
+      .Search-container .search-result .row .box:hover {
+        box-shadow: 3px 3px 3px 3px #ddd;
+        transform: scaleY(1.1);
+        height: 300px; }
+        .Search-container .search-result .row .box:hover .joke {
+          overflow: visible;
+          white-space: normal;
+          width: 100%; }
+      .Search-container .search-result .row .box .joke-image {
+        padding: 10px;
+        float: left;
+        border-right: 2px solid grey; }
+      .Search-container .search-result .row .box .joke {
+        float: left;
+        width: 200px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        margin: 10px;
+        text-transform: capitalize; }
+
+.box:nth-child(1) {
+  transition-delay: 0.1s; }
+
+.box:nth-child(2) {
+  transition-delay: 0.2s; }
+
+.box:nth-child(3) {
+  transition-delay: 0.3s; }
+
+.box:nth-child(4) {
+  transition-delay: 0.4s; }
+
+/*# sourceMappingURL=main.css.map */
