@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import AppRoutes from "./routes/AppRoutes";
 import { Provider } from "react-redux";
 import ConfigureStore from "./store/configureStore";
-/* import "./sass/main.scss"; */
+import "./sass/main.scss";
 const store = ConfigureStore();
 function App() {
   return (
