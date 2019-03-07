@@ -78,6 +78,9 @@ html {
         color: white;
         opacity: 0.4; }
 
+  .message {
+    font-size: 15px !important; }
+
   #main .categories {
     width: 80%; }
     #main .categories .category {
@@ -201,12 +204,22 @@ body {
   padding: 20px;
   border-radius: 5px;
   border: 1px solid gray;
-  height: 300px; }
+  height: 300px;
+  animation: 1s anima linear; }
+@keyframes anima {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%); }
+  50% {
+    opacity: 0.4; }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
   .joke-card .joke_header {
     text-align: center;
     border-bottom: 1px solid red;
     margin-bottom: 10px;
-    background: #5f27cd;
+    background: #cad3c8;
     border-radius: 2px;
     padding: 10px; }
     .joke-card .joke_header .image {

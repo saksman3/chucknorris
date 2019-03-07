@@ -89,7 +89,7 @@ class SearchText extends React.Component {
           this.handleStatus()
         ) : (
           <div className="message">
-            <h3>Please enter some data to search</h3>
+            <h3>Please enter some text to search</h3>
           </div>
         )}
       </div>
